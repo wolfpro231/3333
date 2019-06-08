@@ -25,7 +25,7 @@ client.on('message', message => {
       message.channel.send(`**تـــ تغيير الحالة ــم   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/dream");
+    client.user.setGame(argresult, "https://www.twitch.tv/wolfgod1224");
       message.channel.send(`**تـــ تغيير الحالة ــم**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
