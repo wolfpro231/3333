@@ -1,22 +1,22 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 var prefix = "+";
-var adminprefix = '#'
+var adminprefix = '.'
 
 
-const developers = ["ID","ID"]
+const developers = ["587004550234374175"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
-  if (message.content.startsWith(adminprefix + 'setg')) {
+  if (message.content.startsWith(adminprefix + 's2')) {
     client.user.setGame(argresult);
       message.channel.send(`**تـــ تغيير الحالة ــم   ${argresult}**`)
   } else 
-     if (message.content === (adminprefix + "leave")) {
+     if (message.content === (adminprefix + "s3")) {
     message.guild.leave();        
   } else  
-  if (message.content.startsWith(adminprefix + 'setw')) {
+  if (message.content.startsWith(adminprefix + 's4')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
       message.channel.send(`**تـــ تغيير الحالة ــم   ${argresult}**`)
   } else 
@@ -24,7 +24,7 @@ client.on('message', message => {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`**تـــ تغيير الحالة ــم   ${argresult}**`)
   } else 
-  if (message.content.startsWith(adminprefix + 'sets')) {
+  if (message.content.startsWith(adminprefix + 'st')) {
     client.user.setGame(argresult, "https://www.twitch.tv/dream");
       message.channel.send(`**تـــ تغيير الحالة ــم**`)
   }
